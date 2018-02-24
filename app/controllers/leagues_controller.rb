@@ -11,7 +11,7 @@ class LeaguesController < ApplicationController
   def new
     @league = League.new
   end
-  g
+  
   def create
     @league = League.new(league_params)
     if @League.save
