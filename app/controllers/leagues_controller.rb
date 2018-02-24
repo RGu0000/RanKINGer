@@ -3,11 +3,11 @@ class LeaguesController < ApplicationController
   def index
     @leagues = League.all
   end
-=begin
+
   def show
     @league = League.find(params[:id])
   end
-
+=begin
   def new
     @league = League.new
   end
@@ -45,4 +45,5 @@ class LeaguesController < ApplicationController
     params.require(:league).permit(:name, :description)
   end
 =end
+
 end
