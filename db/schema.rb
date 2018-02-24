@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180224101805) do
+ActiveRecord::Schema.define(version: 20180224184413) do
+
+  create_table "leagues", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "name", default: "", null: false
