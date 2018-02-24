@@ -3,7 +3,7 @@ class LeaguesController < ApplicationController
   def index
     @leagues = League.all
   end
-
+=begin
   def show
     @league = League.find(params[:id])
   end
@@ -11,7 +11,7 @@ class LeaguesController < ApplicationController
   def new
     @league = League.new
   end
-  
+
   def create
     @league = League.new(league_params)
     if @League.save
@@ -44,4 +44,5 @@ class LeaguesController < ApplicationController
   def league_params
     params.require(:league).permit(:name, :description)
   end
+=end
 end
