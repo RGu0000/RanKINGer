@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20180225171359) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["id"], name: "index_players_on_id"
+    t.index ["name"], name: "index_players_on_name"
   end
 
 end
