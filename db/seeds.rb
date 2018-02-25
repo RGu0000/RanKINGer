@@ -34,15 +34,9 @@ memberships = Membership.create([
     {league_id: leagues[3].id, player_id: players[3].id},
                                 ])
 
-
 matches = Match.create([
-                           {league_id: 1, player_1: 1, player_2: 2, player1_goals: 2, player2_goals: 2},
-                           {league_id: 2, player_1: 3, player_2: 4, player1_goals: 0, player2_goals: 3},
-
-                       ])
-
-=begin
-matches = Match.create([
+    {league_id: 1, player_1: 1, player_2: 2, player1_goals: 2, player2_goals: 2},
+    {league_id: 2, player_1: 3, player_2: 4, player1_goals: 0, player2_goals: 3},
     {league_id: leagues[0].id, player_1: players[0].id, player_2: players[1].id, player1_goals: 2, player2_goals: 2},
     {league_id: leagues[0].id, player_1: players[1].id, player_2: players[0].id, player1_goals: 0, player2_goals: 3},
 
@@ -57,6 +51,6 @@ matches = Match.create([
     {league_id: leagues[3].id, player_1: players[2].id, player_2: players[1].id, player1_goals: 0, player2_goals: 7},
     {league_id: leagues[3].id, player_1: players[2].id, player_2: players[3].id, player1_goals: 6, player2_goals: 4},
                        ])
-=end
+
 
 
