@@ -1,11 +1,7 @@
 %h1 Players index
-= link_to "Add new player", new_player_path
 %ol
   - @players.each do |player|
     %li
-      = link_to player.name, player
-      (#{player.description})
+      = player.name
       >
-      = link_to "Edit2", edit_player_path(player)
-      >
-      = link_to "Delete", player_path(player), method: :delete
+      = player.email
