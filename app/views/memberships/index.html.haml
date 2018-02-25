@@ -1,0 +1,15 @@
+%h1 Memberships index
+%ol
+  - @memberships.each do |membership|
+    %li
+      = membership.league_id
+      >
+      = membership.league.description
+      >
+      >
+      >
+      = membership.player_id
+      >
+      = membership.player.name
+
+
