@@ -21,7 +21,7 @@ leagues = League.create([
 memberships = Membership.create([
     {league_id: leagues[0].id, player_id: players[0].id},
     {league_id: leagues[0].id, player_id: players[1].id},
-    
+
     {league_id: leagues[1].id, player_id: players[2].id},
     {league_id: leagues[1].id, player_id: players[3].id},
 
@@ -34,6 +34,21 @@ memberships = Membership.create([
     {league_id: leagues[3].id, player_id: players[3].id},
                                 ])
 
+matches = Match.create([
+    {league_id: leagues[0].id, player_1: players[0].id, player_2: players[1].id, player1_goals: 2, player2_goals: 2},
+    {league_id: leagues[0].id, player_1: players[1].id, player_2: players[0].id, player1_goals: 0, player2_goals: 3},
+
+    {league_id: leagues[1].id, player_1: players[2].id, player_2: players[3].id, player1_goals: 21, player2_goals: 0},
+
+    {league_id: leagues[2].id, player_1: players[1].id, player_2: players[3].id, player1_goals: 1, player2_goals: 1},
+
+    {league_id: leagues[3].id, player_1: players[0].id, player_2: players[3].id, player1_goals: 2, player2_goals: 3},
+    {league_id: leagues[3].id, player_1: players[0].id, player_2: players[3].id, player1_goals: 2, player2_goals: 4},
+    {league_id: leagues[3].id, player_1: players[3].id, player_2: players[1].id, player1_goals: 5, player2_goals: 1},
+    {league_id: leagues[3].id, player_1: players[3].id, player_2: players[2].id, player1_goals: 4, player2_goals: 6},
+    {league_id: leagues[3].id, player_1: players[2].id, player_2: players[1].id, player1_goals: 0, player2_goals: 7},
+    {league_id: leagues[3].id, player_1: players[2].id, player_2: players[3].id, player1_goals: 6, player2_goals: 4},
+                       ])
 
 
 
