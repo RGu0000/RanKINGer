@@ -1,6 +1,5 @@
 class MatchesController < ApplicationController
   def index
-    @matches = Match.all
-    @players = Player.all
+    @matches = Match.includes(:player1, :player2)
   end
 end
