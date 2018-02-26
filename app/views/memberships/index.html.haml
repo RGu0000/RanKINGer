@@ -2,13 +2,13 @@
 %ol
   - @memberships.each do |membership|
     %li
-      = membership.league_id
+      = membership.league.id
       >
       = membership.league.description
       >
       >
       >
-      = membership.player_id
+      = membership.player.id
       >
       = membership.player.name
 

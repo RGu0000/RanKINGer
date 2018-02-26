@@ -1,13 +1,12 @@
 %h1 Matches index
-
 %ol
   - @matches.each do |match|
     %li
       = match.league_id
       >
-      = match.player_1.name
+      = match.player1.email
       vs
-      = match.player_2.name
+      = match.player2.email
       >
       = match.player1_goals
       ':'
